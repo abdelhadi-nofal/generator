@@ -1,0 +1,15 @@
+import ListItem from "./ListItem/ListItem";
+import React from "react";
+import "./styles.css";
+
+function ListView({ list }) {
+  return (
+    <div className="list-wrap">
+      {list.map((item) => (
+        <ListItem key={item.id} item={item} />
+      ))}
+    </div>
+  );
+}
+
+export default ListView;
