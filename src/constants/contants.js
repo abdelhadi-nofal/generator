@@ -31,7 +31,6 @@ export const dataList = [
     id: 1,
     title: "Portable Emergency Backup Generators",
     category: "350 kW",
-    reset: "reset",
     generator: "portable generators",
     rating: 5,
     price: 2500,
@@ -42,7 +41,6 @@ export const dataList = [
     id: 2,
     title: "Kohler 20RESCL-200SELS",
     category: "350 kW",
-    reset: "reset",
 
     generator: "standby generators",
     rating: 4,
@@ -54,7 +52,6 @@ export const dataList = [
     id: 3,
     title: "DuroMax XP5500EH Electric Start-Camping & RV Ready",
     category: "350 kW",
-    reset: "reset",
 
     generator: "gasoline generators",
     rating: 3,
@@ -65,7 +62,6 @@ export const dataList = [
     id: 4,
     title: "Portable Quiet Inverter Generators",
     category: "550 kW",
-    reset: "reset",
 
     generator: "portable generators",
     rating: 1,
@@ -77,7 +73,6 @@ export const dataList = [
     id: 5,
     title: "Generac PowerPact",
     category: "550 kW",
-    reset: "reset",
 
     generator: "standby generators",
     rating: 5,
@@ -89,7 +84,6 @@ export const dataList = [
     id: 6,
     title: "Westinghouse Outdoor Power Equipment WGen5300v Portable Generator",
     category: "550 kW",
-    reset: "reset",
 
     generator: "gasoline generators",
     rating: 5,
@@ -100,7 +94,6 @@ export const dataList = [
     id: 7,
     title: "Portable Recreational Generators",
     category: "1550 kW",
-    reset: "reset",
 
     generator: "portable generators",
     rating: 2,
@@ -112,7 +105,6 @@ export const dataList = [
     id: 8,
     title: "Generac Guardian",
     category: "1550 kW",
-    reset: "reset",
 
     generator: "standby generators",
     rating: 1,
@@ -124,7 +116,6 @@ export const dataList = [
     id: 9,
     title: "WEN 56475 4750-Watt Portable Generator",
     category: "1550 kW",
-    reset: "reset",
 
     generator: "gasoline generators",
     rating: 4,
@@ -135,7 +126,6 @@ export const dataList = [
     id: 10,
     title: "Portable Professional Generators",
     category: "2000 kW",
-    reset: "reset",
 
     generator: "portable generators",
     rating: 2,
@@ -147,7 +137,6 @@ export const dataList = [
     id: 11,
     title: "Kohler 10RESVL",
     category: "2000 kW",
-    reset: "reset",
 
     generator: "standby generators",
     rating: 3,
@@ -159,7 +148,6 @@ export const dataList = [
     id: 12,
     title: "Westinghouse Outdoor Power Equipment",
     category: "2000 kW",
-    reset: "reset",
 
     generator: "gasoline generators",
     rating: 2,

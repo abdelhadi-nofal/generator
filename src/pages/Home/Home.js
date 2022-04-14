@@ -38,9 +38,8 @@ function Home() {
     if (selectedCategory) {
       //   console.log(selectedCategory);
       if (selectedCategory === "reset") {
-        updatedList = updatedList.filter(
-          (item) => item.reset === selectedCategory
-        );
+        // <ListView />;
+        // <h1>asd</h1>;
       } else {
         updatedList = updatedList.filter(
           (item) => item.category === selectedCategory
