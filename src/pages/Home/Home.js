@@ -10,7 +10,7 @@ import EmptyView from "../../components/common/EmptyView/EmptyView";
 
 function Home() {
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [cuisines, setCuisines] = useState([
+  const [generators, setGenerators] = useState([
     { id: 1, checked: false, label: "portable generators" },
     { id: 2, checked: false, label: "standby generators" },
     { id: 3, checked: false, label: "gasoline generators" },
@@ -24,11 +24,11 @@ function Home() {
     !value ? null : setSelectedCategory(value);
 
   const handleChangeChecked = (id) => {
-    const cusinesStateList = cuisines;
-    const changeCheckedCuisines = cusinesStateList.map((item) =>
+    const generatorsStateList = generators;
+    const changeCheckedGenerators = generatorsStateList.map((item) =>
       item.id === id ? { ...item, checked: !item.checked } : item
     );
-    setCuisines(changeCheckedCuisines);
+    setGenerators(changeCheckedGenerators);
   };
 
   const applyFilters = () => {
@@ -42,16 +42,16 @@ function Home() {
       );
     }
 
-    // Cuisine Filter
-    const cuisinesChecked = cuisines
+    // Generators Filter
+    const generatorsChecked = generators
       .filter((item) => item.checked)
       .map((item) => item.label.toLowerCase());
 
-    if (cuisinesChecked.length) {
-      console.log(cuisinesChecked);
+    if (generatorsChecked.length) {
+      console.log(generatorsChecked);
 
       updatedList = updatedList.filter((item) =>
-        cuisinesChecked.includes(item.cuisine)
+        generatorsChecked.includes(item.generator)
       );
     }
 
@@ -71,7 +71,7 @@ function Home() {
 
   useEffect(() => {
     applyFilters();
-  }, [selectedCategory, cuisines, searchInput]);
+  }, [selectedCategory, generators, searchInput]);
   return (
     <div className="home">
       {/* Search Bar */}
@@ -84,9 +84,9 @@ function Home() {
         <div className="home_panel-wrap">
           {/* Side Panel */}
           <FilterPanel
-            selectToggle={handelSelectCategory}
+            selectCategory={handelSelectCategory}
             selectedCategory={selectedCategory}
-            cuisines={cuisines}
+            generators={generators}
             changeChecked={handleChangeChecked}
           />
         </div>

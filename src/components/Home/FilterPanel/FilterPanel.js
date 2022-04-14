@@ -7,7 +7,7 @@ import CheckboxProton from "../../common/CheckboxProton/CheckboxProton";
 function FilterPanel({
   selectedCategory,
   selectCategory,
-  cuisines,
+  generators,
   changeChecked,
 }) {
   return (
@@ -22,13 +22,13 @@ function FilterPanel({
         />
       </div>
 
-      {/* Cusines */}
+      {/* Generator Type */}
       <div className="input-group">
         <p className="label">Generator Type</p>
-        {cuisines.map((cuisine) => (
+        {generators.map((generator) => (
           <CheckboxProton
-            key={cuisine.id}
-            cuisine={cuisine}
+            key={generator.id}
+            generator={generator}
             changeChecked={changeChecked}
           />
         ))}

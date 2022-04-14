@@ -1,9 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-function ListItem({
-  item: { coverSrc, title, price, deliveryFee, serviceTime, rating },
-}) {
+function ListItem({ item: { coverSrc, title, price } }) {
   return (
     <div className="listItem-wrap">
       <img src={coverSrc} alt="" />
