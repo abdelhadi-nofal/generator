@@ -5,6 +5,7 @@ import "./styles.css";
 import CheckboxProton from "../../common/CheckboxProton/CheckboxProton";
 
 function FilterPanel({
+  selectedCategoryAll,
   selectedCategory,
   selectCategory,
   generators,

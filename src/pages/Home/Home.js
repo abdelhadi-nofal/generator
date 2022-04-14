@@ -37,9 +37,15 @@ function Home() {
     // Category Filter
     if (selectedCategory) {
       //   console.log(selectedCategory);
-      updatedList = updatedList.filter(
-        (item) => item.category === selectedCategory
-      );
+      if (selectedCategory === "reset") {
+        updatedList = updatedList.filter(
+          (item) => item.reset === selectedCategory
+        );
+      } else {
+        updatedList = updatedList.filter(
+          (item) => item.category === selectedCategory
+        );
+      }
     }
 
     // Generators Filter
